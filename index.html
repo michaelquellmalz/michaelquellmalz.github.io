@@ -1,0 +1,982 @@
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./include/qmi.css" >
+
+<script><!--https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page-->
+  $(function(){
+    $('a').each(function(){
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('active'); $(this).parents('li').addClass('active');
+        }
+    });
+  });
+</script>
+</head>
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <a class="navbar-brand" href="#">Michael Quellmalz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#publikationen">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#vortraege">Talks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#lehre">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sonstiges">Links</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://tu.berlin/imageanalysis/">FG Applied Mathematics</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- <script type="text/javascript">
+ document.body.className = 'class-tuc'
+ </script> -->
+
+<style>
+  my-email::after {
+    content: attr(data-domain);
+  }
+  my-email::before {
+    content: attr(data-user) "\0040";
+  }
+</style>
+
+
+<div class="container-xl" id="home">
+<h1>Dr. Michael Quellmalz</h1>
+
+<div class="my-4">
+Member of the <strong><a href="https://tu.berlin.de/imageanalysis/">Research Group Applied Mathematics</a></strong></div>
+
+<div class="row">
+  <div class="col-md-7"> <!--col-md-pull-4"-->
+      <table cellpadding="6">
+        <tr>
+          <td class="tableheader" style="width:100pt;">
+            Postal Address:          </td>
+          <td>
+            
+              TU Berlin<br />
+              Institute of Mathematics<br />
+              Sekr. MA 4-3<br />
+              Stra&szlig;e des 17. Juni 136<br />
+              10623 Berlin<br />
+              GERMANY          </td>
+        </tr>
+        <tr>
+          <td class="tableheader">
+            Office:          </td>
+          <td>
+            MA-473
+          </td>
+        </tr>
+        <tr>
+          <td class="tableheader">
+          Secretary:              
+          </td>
+          <td>
+              MA 4-3 <br/><a href='https://www.tu.berlin/vcard/julia.wilton/'>Julia Wilton</a> (Room MA-476) <br/>
+          </td>
+        </tr>
+        <tr>
+          <td class="tableheader">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email:
+          </td>
+          <td>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg>
+            <my-email data-user="quellmalz" data-domain="math.tu-berlin.de"></my-email>
+          </td>
+        </tr>
+        <tr>
+          <td class="tableheader">
+            Phone:
+          </td>
+          <td>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+            +49 (0)30 314-29523 
+          </td>
+        </tr>
+        <tr>
+          <td class="tableheader">
+          Office hours:          </td>
+          <td>
+              any time if present          </td>
+        </tr>
+      </table>
+    </div>
+  <div class="col-md-4"> <!--col-md-push-8"-->
+    <img src="pic/qmi.jpg" alt="Foto Michael Quellmalz" title="Foto Michael Quellmalz" />
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+<h2 id='publikationen' class="titel">Publications</h2>
+<h3>Preprint</h3>
+      <ul class='liste'><li>
+        Michael Quellmalz, Mia Kvåle Løvmo, Simon Moser, Franziska Strasser, Monika Ritsch-Marte: <br />
+	<b>Application and Evaluation of the Common Circles Method</b>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2602.17353>2602.17353</a>.  (<a href='paper/Common_Circles.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Antonin Clerk, Michael Quellmalz, Moritz Piening, Philipp Flotho, Gregor Kornhardt, Gabriele Steidl: <br />
+	<b> HOT-POT: Optimal Transport for Sparse Stereo Matching</b>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2601.12423>2601.12423</a>.  (<a href='paper/CleQuePieFloKorSte26.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Nicolaj Rux, Michael Quellmalz, Gabriele Steidl: <br />
+	<b> Smoothed Distance Kernels for MMDs and Applications in Wasserstein Gradient Flows</b>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2504.07820>2504.07820</a>.  (<a href='paper/RuxQueSte25.pdf'>pdf</a>)
+      </li></ul>
+
+<h3>Articles</h3>
+      <ul class='liste'><li>
+        Johannes Hertrich, Tim Jahn, Michael Quellmalz: <br />
+	<b>Fast Summation of Radial Kernels via QMC Slicing</b>
+ <br/>International Conference on Learning Representations (ICLR 2025). <a href=https://openreview.net/forum?id=iNmVX9lx9l>https://openreview.net/forum?id=iNmVX9lx9l</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2410.01316>2410.01316</a>.  (<a href='paper/HerJahQue25.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Clemens Kirisits, Michael Quellmalz, Eric Setterqvist: <br />
+	<b>Generalized Fourier Diffraction Theorem and Filtered Backpropagation for Tomographic Reconstruction</b>
+	<br/><i>SIAM Journal on Imaging Sciences</i> Vol. 18, Iss. 1, 2025. <a href=https://doi.org/10.1137/24M167370X>doi:10.1137/24M167370X</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2407.01793>2407.01793</a>.  (<a href='paper/KirQueSet24.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Nicolaj Rux, Michael Quellmalz, Gabriele Steidl: <br />
+	<b>Slicing of Radial Functions: a Dimension Walk in the Fourier Space</b>
+  <br/><i>Sampling Theory, Signal Processing, and Data Analysis</i> 23, Article number: 6 (40 pages), 2025. <a href=https://doi.org/10.1007/s43670-025-00100-9>doi:10.1007/s43670-025-00100-9</a> (Open Access)
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2408.11612>2408.11612</a>.  (<a href='paper/RuxQueSte24.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Oleh Melnyk, Michael Quellmalz, Gabriele Steidl, Noah Jaitner, Jakob Jordan, Ingolf Sack: <br />
+	<b>Time-Harmonic Optical Flow with Applications in Elastography</b>
+	<br/><i>Inverse Problems</i> 40(12), 125026 (29 pages), December 2024. <a href=https://doi.org/10.1088/1361-6420/ad9776>doi:10.1088/1361-6420/ad9776</a> (Open Access)
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2405.15507>2405.15507</a>.  (<a href='paper/MelQueSteJaiJorSac24.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz, Léo Buecher, Gabriele Steidl: <br />
+	<b>Parallelly Sliced Optimal Transport on Spheres and on the Rotation Group</b>
+  <br/><i>Journal of Mathematical Imaging and Vision</i> 66(6), pages 951-976, 2024. <a href=https://doi.org/10.1007/s10851-024-01206-w>doi:10.1007/s10851-024-01206-w</a> (Open Access)  (<a href='paper/QueBueSte24.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz, Peter Elbau, Otmar Scherzer, Gabriele Steidl: <br />
+	<b>Motion Detection in Diffraction Tomography by Common Circle Methods</b>
+  <br/><i>Mathematics of Computation</i> 93(346), pages 747–784, March 2024. <a href=https://doi.org/10.1090/mcom/3869>doi:10.1090/mcom/3869</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2209.08086>2209.08086</a>.  (<a href='paper/ElbQueSchSte22.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz, Robert Beinert, Gabriele Steidl: <br />
+	<b>Sliced Optimal Transport on the Sphere</b>
+  <br/><i>Inverse Problems</i> 39(10), 105005 (34 pages), 2023. <a href=https://doi.org/10.1088/1361-6420/acf156>doi:10.1088/1361-6420/acf156</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2304.09092>2304.09092</a>.  (<a href='paper/QueBeiSte23.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Sophie Mildenberger, Michael Quellmalz: <br />
+	<b> A double Fourier sphere method for d-dimensional manifolds</b>
+  <br/><i>Sampling Theory, Signal Processing, and Data Analysis</i> 21, Article number: 23 (40 pages), 2023. <a href=https://doi.org/10.1007/s43670-023-00064-8>doi:10.1007/s43670-023-00064-8</a> (Open Access)  (<a href='paper/MilQue23.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz, Lukas Weissinger, Simon Hubmer, Paul Erchinger: <br />
+	<b>  	A Frame Decomposition of the Funk-Radon Transform </b>
+  <br/>L. Calatroni, M. Donatelli, S. Morigi, M. Prato, M. Santacesaria (Eds.): <i>Scale Space and Variational Methods in Computer Vision</i>. SSVM 2023, pages 42-54. Lecture Notes in Computer Science, vol 14009. Springer, Cham, 2023. <a href=https://doi.org/10.1007/978-3-031-31975-4_4>doi:10.1007/978-3-031-31975-4_4</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2303.05179>2303.05179</a>.  (<a href='paper/QueWeiHubErc23.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Florian Faucher, Clemens Kirisits, Michael Quellmalz, Otmar Scherzer, Eric Setterqvist: <br />
+	<b>Diffraction Tomography, Fourier Reconstruction, and Full Waveform Inversion</b>
+  <br/>In: Ke Chen, Carola B. Schönlieb, Xue-Cheng Tai, Laurent Younces (Eds.) <i>Handbook of Mathematical Models and Algorithms in Computer Vision and Imaging</i>, pages 273-312. Springer, Cham, 2023. <a href=https://doi.org/10.1007/978-3-030-98661-2_115>doi:10.1007/978-3-030-98661-2_115</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2110.07921>2110.07921</a>.  (<a href='paper/FauKirQueSchSet21.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Robert Beinert, Michael Quellmalz: <br />
+	<b>Total Variation-Based Reconstruction and Phase Retrieval for Diffraction Tomography with an Arbitrarily Moving Object</b>
+  <br/><i>Proceedings in Applied Mathematics & Mechanics</i>, 22(1), 6 pages, 2023. <a href=https://doi.org/10.1002/pamm.202200135>doi:10.1002/pamm.202200135</a> (Open Access).
+  <!--<br/>ArXiv preprint <a href=https://arxiv.org/abs/2210.03495>2210.03495</a>-->  (<a href='paper/BeiQue22proceedings.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Robert Beinert, Michael Quellmalz: <br />
+	<b>Total Variation-Based Reconstruction and Phase Retrieval for Diffraction Tomography</b>
+  <br/><i>SIAM Journal on Imaging Sciences</i> 15(3), p. 1373-1399 (2022). <a href=https://doi.org/10.1137/22M1474382>doi:10.1137/22M1474382</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2201.11579>2201.11579</a>.  (<a href='paper/BeiQue22.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Fatima Antarou Ba, Michael Quellmalz: <br />
+	<b> Accelerating the Sinkhorn Algorithm for Sparse Multi-Marginal Optimal Transport via Fast Fourier Transforms </b>
+  <br/><i>Algorithms</i> 15(9) (2022), p. 311. <a href=https://www.mdpi.com/1999-4893/15/9/311>doi:10.3390/a15090311</a> (Open Access).  (<a href='paper/algorithms-15-00311.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Sophie Mildenberger, Michael Quellmalz: <br />
+	<b>Approximation Properties of the Double Fourier Sphere Method</b>
+  <br/><i>Journal of Fourier Analysis and Applications</i> 28(2), Article number 31 (2022). <a href=https://doi.org/10.1007/s00041-022-09928-4>doi:10.1007/s00041-022-09928-4</a> (Open Access)
+  <!--<br/>ArXiv preprint <a href=https://arxiv.org/abs/2108.05662>2108.05662</a>.-->  (<a href='paper/DFS.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Stephan Dahlke, Filippo De Mari, Ernesto De Vito, Markus Hansen, Marzieh Hasannasab, Michael Quellmalz, Gabriele Steidl, Gerd Teschke: <br />
+	<b>Continuous Wavelet Frames on the Sphere: The Group-Theoretic Approach Revisited </b>
+  <br/><i>Applied and Computational Harmonic Analysis</i> 56 (2022), p. 123-149.
+  <a href=https://doi.org/10.1016/j.acha.2021.08.003>doi:10.1016/j.acha.2021.08.003</a>
+  <br/>ArXiv preprint <a href=https://arxiv.org/abs/2012.13460>2012.13460</a>.  (<a href='paper/WaveletSphere_revised.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Clemens Kirisits, Michael Quellmalz, Monika Ritsch-Marte, Otmar Scherzer, Eric Setterqvist, Gabriele Steidl: <br />
+	<b>Fourier Reconstruction for Diffraction Tomography of an Object Rotated Into Arbitrary Orientations</b>
+  <br/><i>Inverse Problems</i> 37 (2021), 115002. <a href=https://doi.org/10.1088/1361-6420/ac2749>doi:10.1088/1361-6420/ac2749</a> (Open Access).  (<a href='paper/KirRitSchSet20.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz: <br />
+	<b>The Funk-Radon transform for hyperplane sections through a common point </b><br />
+  <i>Analysis and Mathematical Physics</i> 10(38), 2020. <a href=https://doi.org/10.1007/s13324-020-00383-2>doi:10.1007/s13324-020-00383-2</a> (Open Access).  (<a href='paper/sphericalTransformD.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz, Ralf Hielscher, Alfred K. Louis: <br />
+	<b>The Cone-Beam Transform and Spherical Convolution Operators</b><br />
+	<i>Inverse Problems</i> 34 (2018) 105006. <a href=https://doi.org/10.1088/1361-6420/aad679>doi:10.1088/1361-6420/aad679</a><br />
+    ArXiv postprint <a href=https://arxiv.org/abs/1803.10515>1803.10515</a>.  (<a href='paper/coneBeam.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Ralf Hielscher, Daniel Potts, Michael Quellmalz: <br />
+	<b>An SVD in Spherical Surface Wave Tomography</b><br />
+    In: Bernd Hofmann, Antonio Leitao and Jorge P. Zubelli (Eds.). <i><a href='http://www.springer.com/de/book/9783319708232#otherversion=9783319708232' target=_blank rel=noopener>New Trends in Parameter Identification for Mathematical Models</a></i>, p. 121-144, Birkhäuser Basel, 2018. <a href='https://doi.org/10.1007/978-3-319-70824-9_7'>doi:10.1007/978-3-319-70824-9_7</a><br />
+    ArXiv postprint <a href=http://arxiv.org/abs/1706.05284>1706.05284</a>.  (<a href='paper/circleArcs.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Michael Quellmalz: <br />
+	<b>A Generalization of the Funk&ndash;Radon Transform</b><br />
+    <i>Inverse Problems</i> 33 (2017) 035016. <a href=https://doi.org/10.1088/1361-6420/33/3/035016>doi:10.1088/1361-6420/33/3/035016</a>  (<a href='paper/sphericalTransform.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Ralf Hielscher, Michael Quellmalz: <br />
+	<b>Reconstructing a Function on the Sphere from Its Means Along Vertical Slices</b><br />
+    <i>Inverse Problems and Imaging</i> 10(3), 2016.
+    <a href=http://dx.doi.org/10.3934/ipi.2016018>doi:10.3934/ipi.2016018</a>  (<a href='paper/circav.pdf'>pdf</a>)
+      </li></ul>
+      <ul class='liste'><li>
+        Ralf Hielscher, Michael Quellmalz: <br />
+	<b>Optimal Mollifiers for Spherical Deconvolution</b><br />
+    <i>Inverse Problems</i> 31 (2015) 085001. <a href=http://dx.doi.org/10.1088/0266-5611/31/8/085001>doi:10.1088/0266-5611/31/8/085001</a>  (<a href='paper/radonS2-final.pdf'>pdf</a>)
+      </li></ul>
+
+
+<h3>Theses</h3><div class="row">
+  <div class="col-xs-12 col-sm-10">
+      <ul class='liste'><li>
+        Michael Quellmalz:<br />
+    <b>Reconstructing Functions on the Sphere from Circular Means</b> <br />
+    Dissertation, Universitätsverlag Chemnitz, 2019.<br/>
+    ISBN 978-3-96100-116-3 <br/>
+    <a href=https://nbn-resolving.org/urn:nbn:de:bsz:ch1-qucosa2-384068>urn:nbn:de:bsz:ch1-qucosa2-384068</a>  (<a href='paper/Dissertation_Quellmalz_Michael.pdf'>pdf</a>)
+      </li></ul></div>
+  <div class="col-xs-5 col-xs-offset-2 col-sm-2 col-sm-offset-0">
+  <a href="pic/diss_quellmalz.jpg">
+  <img class="img-responsive" src="pic/diss_titel.jpg" width=100% />
+  </a>
+  </div>
+  </div>
+      <ul class='liste'><li>
+        Michael Quellmalz:<br />
+    <b>Inversion of the Circular Average Transform on the Sphere</b> <br />
+    Diploma thesis, TU Chemnitz, 2014.  (<a href='paper/diplom.pdf'>pdf</a>)
+      </li></ul>
+</div><br>
+
+
+
+
+
+<div class="container">
+<h2 id='vortraege' class="titel">Talks</h2>
+<h3>Conferences and Workshops</h3>
+    <ul class='liste'><li>
+      <b><a href='https://www.chemnitz-am.de/cms2025'>Workshop and Summer School on Applied Analysis</a></b>, Chemnitz, 22 &ndash; 26 September 2025 <br /> Fast and Accurate Approximation of High-Dimensional Radial Kernels via Slicing  (<a href='presentations/2025Chemnitz.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/sfb-conference-tomography-across-scales/'>SFB Conference Tomography Across the Scales</a></b>, Strobl, Österreich, 16&ndash;21 June 2025 <br />    
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://iclr.cc'>ICLR</a></b>, Singapore, 24&ndash;28 April 2025 <br /> Fast Summation of Radial Kernels via QMC Slicing  (<a href='presentations/QMC_slicing_Poster.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.math-conf.uni-osnabrueck.de/hawi25/'>Workshop on Approximation Theory and Fast Algorithms</a></b>, Hasenwinkel, 7 &ndash; 11 April 2025 <br /> Fast and Accurate Approximation of High-Dimensional Radial Kernels
+via Slicing  (<a href='presentations/2025Hasenwinkel.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.mathematik-cms.uni-osnabrueck.de/aktuell/kolloquium/ws_202425.html'>Kolloquium des Instituts für Mathematik</a></b>, Universität Osnabrück, 22 January 2025 <br /> Fast and Accurate Approximation of High-Dimensional Radial Kernels via Slicing 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://okuson.math.uni-siegen.de/gip2024'>GIP 2024 Annual Meeting</a></b>, Siegen, 25 &ndash; 27 September 2024 <br /> Generalized Fourier Diffraction Theorem and Filtered Backpropagation for Tomographic Reconstruction  (<a href='presentations/2024Siegen.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.chemnitz-am.de/cms2024'>Workshop and Summer School on Applied Analysis</a></b>, Chemnitz, 16 &ndash; 20 September 2024 <br /> Motion detection in diffraction tomography  (<a href='presentations/2024Chemnitz.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.ipms-conference.org/index.php'>Inverse Problems: Modeling & Simulation</a></b>, Mellieha, Malta, 26 May &ndash; 1 June 2024 <br /> Motion detection in diffraction tomography  (<a href='presentations/2024IPMS.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://sites.google.com/view/ot-berlin-2024/'>Optimal Transport: From Theory to Applications</a></b>, WIAS Berlin, 11 &ndash; 15 March 2024 <br /> Sliced Optimal Transport on the Sphere (Poster)  (<a href='presentations/poster-sot.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.mathematik.uni-wuerzburg.de/csip/home/'>Chemnitz Symposium on Inverse Problems 2023</a></b>, Würzburg, 8&ndash;10 November 2023 <br /> Sliced Optimal Transport on the Sphere  (<a href='presentations/2023Wuerzburg.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-ilmenau.de/dmv2023'>DMV Meeting</a></b>, TU Ilmenau, 25&ndash;28 September 2023 <br /> Motion Detection in Diffraction Tomography  (<a href='presentations/2023DMV.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.aip2023.de/'>AIP Applied Inverse Problems Conference</a></b>, Göttingen, 4&ndash;8 September 2023 <br /> Motion Detection in Diffraction Tomography  (<a href='presentations/2023AIP.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://events.unibo.it/ssvm2023'>SSVM2023: 9th International Conference on
+Scale Space and Variational Methods in Computer Vision</a></b>, Santa Margherita di Pula, Sardinia, 21&ndash;25 May 2023 <br /> A Frame Decomposition of the Funk-Radon Transform  (<a href='presentations/2023SSVM.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.ricam.oeaw.ac.at/specsem/specsem2022/workshop2/'>RICAM Special Semester Tomography Across the Scales, Workshop Inverse Problems on Small Scales</a></b>, RICAM, Linz, 17&ndash;21 October 2022 <br /> Motion Detection in Diffraction Tomography  (<a href='presentations/2022Linz.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.uni-goettingen.de/en/654659.html'>Inverse Problems: From experimental data to models and back (Chemnitz Symposium on Inverse Problems 2022)</a></b>, Potsdam, 19 &ndash; 21 September 2022 <br /> Optical Diffraction Tomography with an Object Rotated into Arbitrary Orientations  (<a href='presentations/2022Potsdam.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://ps-mathematik.univie.ac.at/e/index.php?event=ICCHA2022'>8th International Conference on
+Computational Harmonic Analysis (ICCHA2022)</a></b>, Ingolstadt, 12 &ndash; 16 September 2022 <br /> Fourier Reconstruction in Diffraction Tomography of an Irregularly Moving Object  (<a href='presentations/2022ICCHA.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.ipms-conference.org/ipms2022/index.php'>Inverse Problems: Modeling & Simulation</a></b>, Mellieha, Malta, 22 &ndash; 28 May 2022 <br /> Fourier Reconstruction in Diffraction Tomography of an Irregularly Moving Object  (<a href='presentations/2022IPMS.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.siam.org/conferences/cm/conference/is22'>SIAM Conference on Imaging Science (SIAM-IS 2022)</a></b>, TU Berlin (online), 21 &ndash; 25 March 2022 <br /> Fourier Reconstruction in Diffraction Tomography of an Irregularly Moving Object  (<a href='presentations/2022SIAM.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://conference22.waves.kit.edu/'>Conference on Mathematics of Wave Phenomena 2022</a></b>, KIT, Karlsruhe (online), February 14 &ndash; 18, 2022 <br /> Approximation properties of the double Fourier sphere method  (<a href='presentations/2022KIT.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.imath.kiev.ua/~young/youngconf2021/index.php?module=1&lang=en'>International Conference of Young Mathematicians</a></b>, Institute of Mathematics of NAS of Ukraine (online), 3 &ndash; 5 June 2021 <br /> The Fourier diffraction theorem in optical tomography 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://mathplus.de/research-2/spotlight/'>MATH+ Spotlight</a></b>, TU Berlin (online), 2 June 2021 <br /> EF3-6: Deformation Based Regularization of Inverse Problems on Manifolds  (<a href='presentations/2021TUB.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.chemnitz-am.de/ipsym2019/index.php'>Chemnitz Symposium on Inverse Problems</a></b>, Frankfurt, 30 September &ndash; 2 October 2019 <br /> Reconstructing Functions on the Sphere from Circular Means  (<a href='presentations/2019Frankfurt.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://ima.org.uk/11329/2nd-ima-conference-on-inverse-problems-from-theory-to-application/'>2nd IMA Conference On Inverse Problems From Theory To Application</a></b>, London, 4 &ndash; 6 September 2019 <br /> The Funk-Radon transform and spherical tomography  (<a href='presentations/2019ima.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.function-spaces.uni-jena.de/siegmundsburg'>Siegmundsburg Seminar on Analysis & Theoretical Numerics</a></b>, Siegmundsburg, 26 &ndash; 28 August 2019 <br /> Sobolev estimates for spherical means and the Funk-Radon transform  (<a href='presentations/2019siegmundsburg.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://web.archive.org/web/20220309004216/https://www.aip2019-grenoble.fr/'>Applied Inverse Problems Conference AIP 2019</a></b>, Grenoble, 8 &ndash; 12 July 2019 <br /> The Funk-Radon transform and spherical tomography  (<a href='presentations/2019aip.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://my.vanderbilt.edu/at16'>Approximation Theory 16</a></b>, Nashville, 19 &ndash; 22 May 2019 <br /> The cone-beam transform and spherical convolutions  (<a href='presentations/2019Nashville.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www-m15.ma.tum.de/Allgemeines/MSIA19'>Workshop on Mathematical Signal and Image Analysis</a></b>, Raitenhaslach, 1 &ndash; 3 April 2019 <br /> The cone-beam transform and spherical convolution operators  (<a href='presentations/2019raitenhaslach.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.chemnitz-am.de//ipsym2018/index.php'>Chemnitz Symposium on Inverse Problems</a></b>, TU Chemnitz, 27 und 28 September 2018 <br /> The cone-beam transform and spherical convolution operators  (<a href='presentations/2018chemnitz.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.math.uni-luebeck.de/mitarbeiter/prestin/workshop/hasenwinkel2018/'>Mecklenburg Workshop
+ Approximation Methods and Fast Algorithms</a></b>, Hasenwinkel, Mecklenburg-Vorpommern, Germany, 10 &ndash; 14 September 2018 <br /> The cone-beam transform and spherical convolution operators  (<a href='presentations/2018hasenwinkel.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.siam-is18.dm.unibo.it/'>SIAM Conference on Imaging Science (SIAM-IS 2018)</a></b>, Bologna, Italy, 5 &ndash; 8 June 2018 <br /> The cone-beam transform and spherical convolution operators  (<a href='presentations/2018siam.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.ipms-conference.org/ipms2018/index.php'>Inverse Problems: Modeling & Simulation</a></b>, Mellieha, Malta, 21 &ndash; 26 May 2018 <br /> An SVD in spherical surface wave tomography  (<a href='presentations/2018ipms.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-braunschweig.de/icm/pde/personal/langemann/conference-vwproject'>Modeling, analysis, and approximation theory toward applications in tomography and inverse problems</a></b>, TU Braunschweig, February 3 &ndash; 7, 2018 <br /> The Funk-Radon transform and its generalizations  (<a href='presentations/2018braunschweig.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://mtm.ufsc.br/~aleitao/public/impa-pt2017/index-meetings.html'>New Trends in Parameter Identification for Mathematical Models</a></b>, IMPA, Rio de Janeiro, Brazil, October 30 &ndash; November 3, 2017 <br /> An SVD in spherical surface wave tomography  (<a href='presentations/2017rio.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.uni-siegen.de/fb6/geomathe/gemmi2017/'>Geomathematics Meets Medical Imaging</a></b>, Speyer, 5 &ndash; 8 September 2017 <br /> An SVD in spherical surface wave tomography  (<a href='presentations/2017gemmi.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.ricam.oeaw.ac.at/events/conferences/radon100/'>100 Years of the Radon Transform</a></b>, RICAM, Linz, Austria, 27 &ndash; 31 March 2017 <br /> A generalization of the Funk-Radon transform  (<a href='presentations/2017ricam.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.fernuni-hagen.de/numerik/rrw/workshop2017.shtml'>27. Rhein-Ruhr-Workshop</a></b>, Bestwig, 27 &ndash; 28 January 2017 <br /> Eine Verallgemeinerung der Funk-Radon-Transformation  (<a href='presentations/2017rrw.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-chemnitz.de/mathematik/inverse_probleme/symposium/csip2016.php'>Chemnitz Symposium on Inverse Problems</a></b>, TU Chemnitz, 22 &ndash; 23 September 2016 <br /> A generalization of the Funk-Radon transform  (<a href='presentations/2016chemnitz-symposium.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.math.uni-luebeck.de/mitarbeiter/prestin/workshop/hasenwinkel2016/'>Mecklenburg Workshop
+Approximation Methods and Data Analysis</a></b>, Hasenwinkel, Mecklenburg-Vorpommern, Germany, 5 &ndash; 9 September 2016 <br /> A generalization of the Funk-Radon transform  (<a href='presentations/2016hasenwinkel.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.math.uni-luebeck.de/mitarbeiter/erb/miem2016/index.php'>Mathematical Imaging and Emerging Modalities</a></b>, Osnabrück, Germany, 27 &ndash; 30 June 2016 <br /> A generalization of the Funk-Radon transform  (<a href='presentations/2016miem.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.ipms-conference.org/ipms2016/'>Inverse Problems: Modeling & Simulation</a></b>, Fethiye, Turkey, 23 &ndash; 28 May 2016 <br /> A generalization of the spherical Radon transform to circles passing through a fixed point  (<a href='presentations/2016IPMS.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.fernuni-hagen.de/numerik/rrw/workshop2016.shtml'>26. Rhein-Ruhr-Workshop</a></b>, Bestwig, 29 &ndash; 30 January 2016 <br /> Eine Verallgemeinerung der Funk-Radon-Transformation für Kreise durch einen festen Punkt  (<a href='presentations/2016rrw.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.wias-berlin.de/workshops/IPworkshop/index.jsp'> Recent Developments in Inverse Problems</a></b>, Berlin, Germany, 17 &ndash; 18 September 2015 <br /> Optimal mollifiers for reconstructing spherical images from circular means  (<a href='presentations/2015berlin.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.math.uni-luebeck.de/workshop/hasenwinkel2015.php'>Mecklenburg Workshop
+Approximation Methods and Function Spaces</a></b>, Hasenwinkel, Mecklenburg-Vorpommern, Germany, 16 &ndash; 20 M&auml;rz 2015 <br /> Optimal Mollifiers for Spherical Deconvolution  (<a href='presentations/2015hasenwinkel.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.fernuni-hagen.de/numerik/ORR+RRW/RRW/ArchivRRW/WS14-15/workshop2015.html'>25. Rhein-Ruhr-Workshop</a></b>, Bestwig, 30 &ndash; 31 January 2015 <br /> Optimal Mollifiers for Spherical Deconvolution  (<a href='presentations/2015rrw.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.analysis.uos.de/m4imag/'>Helmholtz-Workshop: Mathematics for imaging</a></b>, Bad Harzburg, Lower Saxony, Germany, 2 &ndash; 4 April 2014 <br /> Optimal kernels for the inversion of the spherical Radon and cosine transform  (<a href='presentations/presentation.pdf'>pdf</a>)
+    </li></ul>
+
+
+<h3>Poster</h3>
+    <ul class='liste'><li>
+      <b><a href='https://icerm.brown.edu/topical_workshops/tw15-2-caair/'>Computational and Analytical Aspects of Image Reconstruction</a></b>, ICERM, Brown University, Providence, Rhode Island, 13 &ndash; 17 July 2015 <br /> Reconstruction of Functions on the Sphere from Spherical Means  (<a href='presentations/ICERM Poster.pdf'>pdf</a>)
+    </li></ul>
+
+<h2>Seminar talks</h2>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at//'>18th Internal Meeting of the SFB Tomography Across the Scales</a></b>, Obergurgl, Österreich, 2&ndash;5 December 2025 <br />    
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/'>8th Member Meeting of the SFB Tomography Across the Scales</a></b>, Bad Ischl, Österreich, 9&ndash;12 September 2025 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/17th-sfb-internal-meeting/'>17th Internal Meeting of the SFB Tomography Across the Scales</a></b>, Obergurgl, Österreich, 3&ndash;6 December 2024 <br />    
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tu-freiberg.de/fakultaet1/institute/angewandte-analysis/seminar'>Seminar Angewandte Analysis</a></b>, TU Freiberg, 13 November 2024 <br />    
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/7th-sfb-member-meeting/'>7th Member Meeting of the SFB Tomography Across the Scales</a></b>, Bad Goisern, Österreich, 9&ndash;12 September 2024 <br /> Time-Harmonic Optical Flow with Applications in Elastography 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/16th-internal-sfb-meeting/'>16th Internal Meeting of the SFB Tomography Across the Scales</a></b>, Strobl, Österreich, 1 &ndash; 5 July 2024 <br /> Update on diffraction tomography 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/15th-internal-sfb-meeting/'>15th Internal Meeting of the SFB Tomography Across the Scales</a></b>, Obergurgl, Österreich, 27&ndash;30 November 2023 <br /> Universal filtered backpropagation formula for diffraction tomography with various imaging setups 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/sixth-sfb-member-meeting/'>Sixth Member Meeting of the SFB Tomography Across the Scales</a></b>, Wildalpen, Österreich, 12&ndash;15 September 2023 <br /> Sliced Optimal Transport on the Sphere 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/fourteenth-internal-sfb-meeting/'>Fourteenth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Wildalpen, Österreich, 3&ndash;5 July 2023 <br /> Motion Detection from 2D Projections of Moving Particles 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/thirteenth-internal-sfb-meeting/'>Thirteenth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Windischgarsten, Österreich, 12&ndash;15 February 2023 <br /> Update on Diffraction Tomography 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/twelfth-internal-sfb-meeting/'>Twelfth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Obergurgl, Österreich, 4&ndash;7 December 2022 <br /> Motion Detection in Diffraction Tomography 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/fifth-sfb-member-meeting/'>Fifth Member Workshop of the SFB Tomography Across the Scales</a></b>, Gmunden, Österreich, 26&ndash;29 September 2022 <br /> Approximation Properties of the Double Fourier Sphere Method 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/past-events/eleventh-internal-sfb-meeting/'>Eleventh Internal Meeting of the SFB Tomography Across the Scales</a></b>, Windischgarsten, Österreich, 19&ndash;22 June 2022 <br /> Motion Detection in Diffraction Tomography by Common Circle Methods 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-chemnitz.de/mathematik/ang_analysis/seminar.php'>Research Seminar Analysis</a></b>, TU Chemnitz (online), 26 March 2021 <br /> Fourier reconstruction in diffraction tomography with an arbitrarily rotated object 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/sixth-internal-meeting-online/'>Sixth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Wien (online), 30 November 2020 <br /> Reconstruction Formulae in Diffraction Tomography based on NFFTs and Backpropagation  
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/fifth-internal-meeting-online/'>Fifth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Wien (online), 1 September 2020 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://www.tu-chemnitz.de/mathematik/termine/2019/Quellmalz.pdf>Öffentliche Prüfung im Promotionsverfahren</a></b>, TU Chemnitz, 26 November 2019 <br /> Reconstructing Functions on the Sphere from Circular Means 
+    </li></ul>
+    <ul class='liste'><li>
+      <b>Forschungsseminar Analysis</b>, Faculty of Mathematics, TU Chemnitz, 23 January 2018 <br /> The Funk-Radon transform and its generalizations 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-chemnitz.de/mathematik/analysis/rose/phd_seminar.html'>PhD Seminar</a></b>, TU Chemnitz, 12 December 2016 <br /> An introduction to reproducing kernel Hilbert spaces 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-chemnitz.de/mathematik/analysis/rose/phd_seminar.html'>PhD Seminar</a></b>, TU Chemnitz, 19 May 2016 <br /> A generalization of the Funk-Radon transform 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.tu-chemnitz.de/mathematik/analysis/rose/phd_seminar.html'>PhD Seminar</a></b>, TU Chemnitz, 20 January 2015 <br /> The Funk&ndash;Radon transform 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www-user.tu-chemnitz.de/~seidm/lehre/PEM/'>Seminar Applied Analysis</a></b>, TU Chemnitz, 10 June 2013 <br /> Schnelle Legendre&ndash;Transformation 
+    </li></ul>
+
+
+<h3>Further Talks</h3>
+    <ul class='liste'><li>
+      <b><a href='https://isis.tu-berlin.de/mod/forum/discuss.php?d=385233'>Infoveranstaltung Digitale Prüfungen</a></b>, TU Berlin (online), 7 June 2021 <br /> How to STACK (Fragetyp in ISIS/Moodle für Formelaufgaben)  (<a href='presentations/2021E-Learning.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://www.tu-chemnitz.de/rektorat/pli/digitalisierung/#tuctage>TUCdigital Tage der digitalen Hochschulbildung</a></b>, TU Chemnitz, 14 &ndash; 15 January 2020 <br /> Lit.Shortcut, Digitale Prüfungen in OPAL. Das Prüfungssystem ONYX in der praktischen Anwendung 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/5499682817>13. Netzwerktreffen Mathematik/Physik + E-Learning</a></b>, Hochschule für Technik und Wirtschaft Dresden, 11 September 2019 <br /> Adaptives Feedback und individualisierte Aufgabengestaltung – Technologie und Praxis 
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/5499682817>12. Netzwerktreffen Mathematik/Physik + E-Learning</a></b>, Technische Universität Bergakademie Freiberg, 12 March 2019 <br /> Die stetige Weiterentwicklung im Aufgabenpool Mathematik  (<a href='presentations/2019freiberg_web.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://tu-freiberg.de/grafa/litshortcut-onyx-in-der-hochschullehre-mit-onlinetests-mathematische-aufgaben-in-die-lehre-int>LiT.Shortcut</a></b>, Technische Universität Bergakademie Freiberg, 7 November 2018 <br /> Onyx in der Hochschullehre – mit Onlinetests mathematische Aufgaben in die Lehre integrieren   (<a href='presentations/2018lit_web.pdf'>pdf</a>)
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href=https://blog.hrz.tu-chemnitz.de/urzcommunity/2018/06/21/nachlese-zum-opal-supporter-treffen/>15. OPAL-Supporter-Treffen</a></b>, TU Chemnitz, 14 June 2018 <br /> Formatives E-Assessment in Mathematik-Lehrveranstaltungen  (<a href='presentations/E-Learning-Michael.pdf'>pdf</a>)
+    </li></ul><h2 class='titel'>Further Workshops or Meetings</h2>
+    <ul class='liste'><li>
+      <b><a href='https://mathplus.de/events/workshop-mathematics-and-industry/'>Mathematics and Industry</a></b>, Physikalisch-Technische Bundesanstalt, Berlin, 3 November 2023 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='www.math.uni-luebeck.de/mitarbeiter/prestin/workshop/hasenwinkel2023/'>Mecklenburg Workshop:
+ Data Analysis und Approximation</a></b>, Hasenwinkel, 7 July 2023 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.wias-berlin.de/workshops/MIA2023/index.html'>MIA 2023 Mathematics and Image Analysis</a></b>, WIAS Berlin, 1&ndash;3 February 2023 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://tomography.univie.ac.at/events/past-events/tenth-internal-sfb-meeting/'>Tenth Internal Meeting of the SFB Tomography Across the Scales</a></b>, Obergurgl (hybrid), Österreich, 17&ndash;20 March 2022 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://mathplus.de/topic-development-lab/tes-winter-2021-22/tes-winter-2021-22-kick-off-conference/'>Kick-off Workshop Thematic Einstein Semester on Mathematics of Imaging in Real-World Challenges</a></b>, Physikalisch-Technische Bundesanstalt, Berlin, 6 &ndash; 8 October 2021 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://cms.rz.uni-jena.de/matia2/Forschung/Tagungen+/Siegmundsburg.html'>Siegmundsburg Seminar on Analysis & Theoretical Numerics</a></b>, Siegmundsburg, 31 August &ndash; 2 September 2021 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.esi.ac.at/events/e389/'>Tomographic Reconstructions and their Startling Applications</a></b>, Erwin Schrödinger Institute, Wien (online), 15 &ndash; 25 March 2021 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www.chemnitz-am.de/ipsym2020/index.php'>Chemnitz Symposium on Inverse Problems</a></b>, TU Chemnitz (online), 14 &ndash; 17 September 2020 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://cms.rz.uni-jena.de/matia2/Forschung/Tagungen+/Siegmundsburg.html'>Siegmundsburg Seminar on Analysis & Theoretical Numerics</a></b>, Siegmundsburg, 27 &ndash; 29 July 2020 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='https://www3.math.tu-berlin.de/numerik/CMMDS19/index.html'>Computational and Mathematical
+Methods in Data Science</a></b>, Berlin, 24 &ndash; 25 October 2019 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.fernuni-hagen.de/numerik/rrw/workshop2019.shtml'>29. Rhein-Ruhr-Workshop</a></b>, Bestwig, 1 &ndash; 2 February 2019 <br />   
+    </li></ul>
+    <ul class='liste'><li>
+      <b><a href='http://www.fernuni-hagen.de/numerik/rrw/workshop2018.shtml'>28. Rhein-Ruhr-Workshop</a></b>, Bestwig, 2 &ndash; 3 February 2018 <br />   
+    </li></ul>
+ </div><br>
+
+
+
+<div class="container-xl" id='lehre'>
+<h2 class="titel">Teaching</h2>
+<h3>Sommer 2025</h3><ul><li> Vorlesung <a href=https://isis.tu-berlin.de/course/view.php?id=42635>Analysis II für Ingenieurwissenschaften</a></li></ul>
+<h3>Sommer 2022</h3><ul><li> <a href=https://isis.tu-berlin.de/course/view.php?id=28935>Harmonische Analysis I</a></li>
+      </ul>
+<h3>Winter 2021/22</h3><ul><li> <a href=https://isis.tu-berlin.de/course/view.php?id=25938>Numerische Mathematik I</a></li>
+      </ul>
+<h3>Sommer 2021</h3><ul><li> <a href=https://isis.tu-berlin.de/course/view.php?id=25124>Seminar Angewandte Analysis</a></li>
+    <li> <a href=https://www.math.tu-berlin.de/mathematik_service/module/early_bird/>Early Bird</a> (<a href=https://isis.tu-berlin.de/course/view.php?id=25283>ISIS</a>)</li></ul>
+<h3>Winter 2020/21</h3><ul><li> <a href=https://isis.tu-berlin.de/course/view.php?id=21901>Numerische Mathematik I</a></li></ul>
+<h3>Summer 2020</h3>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/23139516438 class=linkextern target=_blank>Fourier-Analysis</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/23129686033 class=linkextern target=_blank>Mathematik II (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/23060905987 class=linkextern target=_blank>Mathematik IV (für IF, ET, Ph)</a>
+</ul><h3>Winter 2019</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-352</td>
+  <td><a href='https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/21343830025'>Mathematik III (für IF, ET, Ph)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Di 13:45 - 15:15</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/B102'>3/B102</a>
+  <td> </td>
+</tr>
+<tr>
+  <td>220000-352P</td>
+  <td><a href='https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/21343830025'>Mathematik III (für IF, ET, Ph)</a></td>
+  <td>Praktikum</td>
+  <td>Fr 9:15 - 10:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/633'>2/39/633</a>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/21422997506 class=linkextern target=_blank>Mathematik I (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/21343830025 class=linkextern target=_blank>Mathematik III (für IF, ET, Ph)</a>
+</ul>
+<h5>Brückenkurs</h5>
+<ul>
+<li><a href=https://www.tu-chemnitz.de/qpl/tu4u/studierende/brueckenkurse/kurse/brueckenkurs_ing-ba-mb.php>Vorbereitungskurs Ingenieurwissenschaften</a> (Mathematik) 23.-27. September 2019
+</ul>
+<h3>Summer 2019</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-452</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-IV-2019/'>Mathematik IV (für IF, ET, Ph)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Mo 15:45 - 16:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=1/346'>1/346</a>
+</tr>
+<tr>
+  <td>220000-452P</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-IV-2019/'>Mathematik IV (für IF, ET, Ph)</a></td>
+  <td>Praktikum</td>
+  <td>Di 17:15 - 18:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a>
+</tr>
+<tr>
+  <td>220000-833</td>
+  <td><a href='https://www-user.tu-chemnitz.de/~rahi/lehre/18Numerik.php'>Numerische Methoden für Ingenieure</a></td>
+  <td>Praktikum</td>
+  <td>Mo 7:30 - 9:00</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/19867893765 class=linkextern target=_blank>Mathematik II (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/19692879873 class=linkextern target=_blank>Mathematik IV (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/19992608768 class=linkextern target=_blank>Numerische Methoden für Ingenieure</a>
+</ul><h3>Winter 2018/19</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-354</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-III-2018/'>Mathematik III (für IF, ET, Ph)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Do 13:45 - 15:15</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/N005'>2/N005</a>
+</tr>
+<tr>
+  <td>220000-354P</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-III-2018/'>Mathematik III (für IF, ET, Ph)</a></td>
+  <td>Praktikum</td>
+  <td>Fr 9:15 - 10:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/18166317064 class=linkextern target=_blank>Mathematik I (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/17988812800 class=linkextern target=_blank>Mathematik III (für IF, ET, Ph)</a>
+</ul>
+<h5>Brückenkurs</h5>
+<ul>
+<li><a href=https://www.tu-chemnitz.de/qpl/tu4u/studierende/brueckenkurse/kurse/brueckenkurs_ing-ba-mb.php>Vorbereitungskurs Ingenieurwissenschaften</a> (Mathematik) 17.-26. September 2018
+</ul><h3>Summer 2018</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-254</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-II-2018/'>Mathematik II (für IF, ET, Ph)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Fr 11:30 - 13:00</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/N005'>2/N005</a>
+</tr>
+<tr>
+  <td>220000-254P</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-II-2018/'>Mathematik II (für IF, ET, Ph)</a></td>
+  <td>Praktikum</td>
+  <td>Mi 9:15 - 10:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/16875814912 class=linkextern target=_blank>Mathematik II (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/16151904257 class=linkextern target=_blank>Numerische Methoden für Ingenieure</a>
+</ul>
+</ul><h3>Winter 2017</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-154</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-I-2017/'>Mathematik I (für IF, ET, Ph)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Mi 11:30 - 13:00</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/W015'>2/W015</a>
+</tr>
+<tr>
+  <td>220000-154P</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/numa/lehre/mathematik-I-2017/'>Mathematik I (für IF, ET, Ph)</a></td>
+  <td>Praktikum</td>
+  <td>Di 9:15 - 10:45</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/15047884802 class=linkextern target=_blank>Mathematik I (für IF, ET, Ph)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/15511191561 class=linkextern target=_blank>Mathematik III (für Info)</a>
+</ul>
+<h4>Brückenkurs</h4>
+<ul>
+<li><a href=https://www.tu-chemnitz.de/qpl/tu4u/studierende/brueckenkurse/kurse/brueckenkurs_ing-ba-mb.php>Vorbereitungskurs Ingenieurwissenschaften</a> (Mathematik) 18.-29. September 2017
+</ul><h3>Summer 2017</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-254</td>
+  <td><a href='/mathematik/num_analysis/ss17ma2/index.php'>Mathematik II (für Informatiker, ET und IK)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Mo 13:45 - 15:15 <br/> Do 13:45 - 15:15 (1. Wo.)</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=1/205'>1/205</a><br/>
+  <a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/B102'>2/B102</a></td>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/13641744385 class=linkextern target=_blank>Mathematik II (für IF, ET, IK)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/13641744386 class=linkextern target=_blank>Numerische Methoden für Ingenieure</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/13880262666 class=linkextern target=_blank>Numerische Mathematik</a>
+</ul><h3>Winter 2016/17</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-154</td>
+  <td><a href='/mathematik/num_analysis/ws16ma1/index.php'>Mathematik I (für Informatiker, ET und IK)</a></td>
+  <td>&Uuml;bung</td>
+  <td>Mo 13:30 - 15:00 <br/> Fr 9:15 - 10:45 (1. Wo.)</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=1/346'>1/346</a><br/>
+  <a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/W020'>2/W020</a></td>
+</tr>
+</table>
+<h5>Online-Kurse</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/12168200202 class=linkextern target=_blank>Mathematik I (für IF, ET, IK)</a>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/12290981906 class=linkextern target=_blank>Mathematik III (für Info)</a>
+</ul><h3>Summer 2016</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-B84</td>
+  <td><a href='./lehre/16S_Fourieranalysis/index.php'>Introduction to Fourier analysis <sup>[de]</sup></a></td>
+  <td>Exercise</td>
+  <td>Thu 7:30 - 9:00 </td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/N006'>2/N006</a></td>
+</tr>
+<tr>
+  <td>220000-B84</td>
+  <td><a href='https://www-user.tu-chemnitz.de/~rahi/lehre/16Numerik.php'>Numerical methods for engineers <sup>[de]</sup></a></td>
+  <td>Practicum</td>
+  <td>Tue 15:30 - 17:00 </td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/39/733'>2/39/733</a></td>
+</tr>
+</table>
+<h5>Online-Kurs</h5>
+<ul>
+<li><a href=https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/10503651334 class=linkextern target=_blank>Numerische Methoden für Ingenieure</a>
+</ul><h3>Winter 2015/16</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-163</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/wima/deutsch/lehre/matheI_wiwi.php'>Mathematics I (for students of business administration)</a></td>
+  <td>Exercise</td>
+  <td>Mon 13:45 - 15:15 </td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=3/B101'>3/B101</a></td>
+</tr>
+<tr>
+  <td>220000-164</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/wima/deutsch/lehre/matheI_wiwi.php'>Mathematics I (for students of business administration)</a></td>
+  <td>Exercise</td>
+  <td>Mon 15:30 - 17:00 </td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=3/B101'>3/B101</a></td>
+</tr>
+<tr>
+  <td>220000-165</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/wima/deutsch/lehre/matheI_wiwi.php'>Mathematics I (for students of business administration)</a></td>
+  <td>Exercise</td>
+  <td>Tue 11:30 - 13:00 </td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/N005'>2/N005</a></td>
+</tr>
+</table><h3>Summer 2015</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-264<br/>
+  220000-265</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/wima/deutsch/lehre/matheII_wiwi.php'>Mathematics II (for students of business administration)</a></td>
+  <td>Exercise</td>
+  <td>Tue (even & odd) 13:45 - 15:15</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/B102'>2/B102</a><br /></td>
+</tr>
+</table><h3>Winter 2014/2015</h3>
+<table class='table'>
+<tr>
+  <th>Number</th>
+  <th >Class</th>
+  <th>Type</th>
+  <th>Time</th>
+  <th>Room</th>
+</tr>
+<tr>
+  <td>220000-166</td>
+  <td><a href='https://www.tu-chemnitz.de/mathematik/wima/deutsch/lehre/matheI_wiwi.php'>Mathematics I (for students of business administration)</a></td>
+  <td>Exercise</td>
+  <td>Wed 7:30 - 9:00</td>
+  <td><a href='https://www.tu-chemnitz.de/tu/lageplan/campusfinder/campusfinder2014.php?raum=2/N005'>2/N005</a><br /></td>
+</tr>
+</table>
+</div>
+
+
+<div class="container-xl">
+<h2 id='sonstiges' class="titel">Links</h2>
+
+<ul class="liste">
+  <li>
+    <a href="https://scholar.google.com/citations?user=FBIsw-oAAAAJ" target=_blank rel="noopener">Google Scholar profile</a>
+  </li>
+  <li>
+    <a href="https://orcid.org/0000-0001-6206-5705" target=_blank rel="noopener">Orcid</a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/michael-quellmalz-718324387/" target=_blank rel="noopener">Linkedin</a>
+  </li>
+  <li>
+    <a href="https://tomography.univie.ac.at" target=_blank rel="noopener">SFB Tomography Across the Scales</a>
+  </li>
+</ul>
+
+<h5>Artikel</h5>
+<ul class="liste">
+  <li>
+    <a href="https://www.tu-chemnitz.de/tu/pressestelle/aktuell/10459" target=_blank rel="noopener">Verleihung der Universit&auml;tspreise (Leistung lohnt sich)</a> (03.12.2020)
+  </li>
+  <li>
+    <a href="https://bildungsportal.sachsen.de/portal/projekt/adaptives-feedback-und-individualisierte-aufgabengestaltung-technologie-und-praxis/" target=_blank rel="noopener">Digital Fellowship: Adaptives Feedback und individualisierte Aufgabengestaltung – Technologie und Praxis</a> (<a href=presentations/Quellmalz_Seidel_2020_Poster.pdf>Poster</a>)
+  </li>
+  <li>
+    <a href="https://bildungsportal.sachsen.de/portal/digital-fellows-stellen-sich-vor-tandem-fellowships-fuer-e-assessment-angebote-in-ingenieurwissenschaften-und-mathematik/">Digital Fellows stellen sich vor: Tandem-Fellowships für E-Assessment-Angebote in Ingenieurwissenschaften und Mathematik</a> (28.11.2019)
+  </li>
+  <li>
+    <a href="https://www.tu-chemnitz.de/tu/pressestelle/aktuell/9199" target=_blank rel="noopener">Die ideale Pr&uuml;fungsvorbereitung: Mathe bequem vom Sofa aus</a> (20.12.2018)
+  </li>
+  <li>
+    <a href="https://www.tu-chemnitz.de/tu/pressestelle/aktuell/9100" target=_blank rel="noopener">TU Chemnitz vergab erstmals Preise für herausragende Leistungen in Lehre, Forschung und Transfer</a> (08.11.2018)
+  </li>
+</ul>
+<h5>Software</h5>
+<ul class="liste">
+  <li>
+    <a href="https://tu-chemnitz.de/~potts/nfft">NFFT</a>: Nonequispaced Fast Fourier Transforms (<a href="https://github.com/NFFT/nfft">Github</a>)
+  </li>
+  <li>
+    <a href="https://github.com/michaelquellmalz/FourierODT" target=_blank rel="noopener">FourierODT</a>: Matlab toolbox for reconstruction and phase retrieval in diffraction tomography
+  </li>
+  <li>
+    <a href="https://github.com/Sniper2k/Time-Harmonic-Elastography" target=_blank rel="noopener">Time-Harmonic-Elastography</a>
+  </li>
+  <li>
+    <a href="https://github.com/leo-buecher/Sliced-OT-Sphere" target=_blank rel="noopener">Sliced-OT-Sphere</a>: Sliced optimal transport and sliced Wasserstein barycenters on the sphere
+  </li>
+  <li>
+    <a href="https://github.com/fatima0111/NFFT-Sinkhorn" target=_blank rel="noopener">NFFT-Sinkhorn</a>: Matlab toolbox for the Sinkhorn algorithm in multimarginal optimal transport
+  </li>
+</ul>
+<h5>Weiteres</h5>
+<ul class="liste">
+  <li>
+    <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=262786" target=_blank rel="noopener">Genealogy</a>
+  </li>
+  <li>
+    <a href="https://mathplus.de/about-us/members/postdocs-scientists/" target=_blank rel="noopener">MATH+ (Berlin Mathematics Research Center)</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/bmo_2019" target=_blank rel="noopener">Bundesrunde Mathematikolympiade 2019</a> auf Twitter
+  </li>
+  <li>
+    <a href="https://userstyles.org/styles/152770/onyx-editor" target=_blank rel="noopener">Userstyle für Onyx-Editor</a>
+  </li>
+</ul>
+</div>
