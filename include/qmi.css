@@ -27,3 +27,6 @@ h1.tipp{background:initial;border-bottom:1px solid;border-top:1px solid;padding:
   scroll-margin-top: 56px; /* set to your navbar height */
 }
 
+body {
+  padding-top: 56px; /* set to your navbar height */
+}
